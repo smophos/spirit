@@ -9,38 +9,58 @@
 				Background-attachment: fixed;
 				background-position: 50% 50%;
 			}
-			.enter{
-				color: #c4c1c1;
-				bakcground-color: #0b0c0c;
-				font-family:"Lucida Console";
-				font-weight: bold;
-				text-shadow: 1px 0px 20px white;
+			div.enter{
+			
+				
+				
 				position: fixed;
+				text-shadow: 1px 0px 20px white;
+				
 				text-align: center;
-				width:305px;
-				height:100px;
-				padding:10px;
 				
-				margin: 480px 470px;
+				font-weight: bold;
+				font-family:"Lucida Console";
 				
+				padding:1px;
 				
+				margin: 450px 470px;
 				
-				transition: background 2s, color 2s;
-				-webkit-transition: background  2s, color 2s; /* Safari and Chrome */
 				
 				
 			}
-			.enter:hover
+			
+			h4{
+				width: 300px;
+				height: 100px;
+				position:absolute;
+				color: #c4c1c1;
+				transition: color 2s;
+				-webkit-transition: color 2s; /* Safari and Chrome */
+			}
+			
+			h4:hover
 			{
-				
-				background: url("border.png") center no-repeat;
 				color: black;
-				
+			}
+			
+			div.backimg{
+			
+				width: 300px;
+				height: 90px;
+				postion:relative;
+				background: url("border.png") center no-repeat;
+				opacity:0;
+				transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+			}
+			
+			div.backimg:hover{
+				opacity:1;
 			}
 		</style>
 	
 	</head>
 	<body>
-		<div class="enter">  Enter  </div>
+		<div class="enter"><h4> Enter <div class="backimg"></div></h4></div>
 	</body>
 </html>
