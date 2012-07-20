@@ -17,9 +17,10 @@
 				position: fixed;
 				
 				text-align: center;
-				font-weight: bold;
-				font-size: 16px;
-				font-family:"Lucida Console";
+				
+				font-size: 19px;
+				font-family:"Courier New";
+				--font-weight: bold;
 				padding:1px;
 				width: 300px;
 				height: 100px;
@@ -40,19 +41,12 @@
 				left: 0px;
 				
 				text-shadow: 1px 0px 20px white;
-				color: black;
-				transition: color 2s ease-in-out
-				-webkit-transition: color 2s ease-in-out; /* Safari and Chrome */
-				
+				color: #6BDBF1;
 				position: relative
 
 				
 			}
 			
-			div.text:hover
-			{
-				color: black;
-			}
 			
 			div.backimg{
 				
@@ -66,29 +60,31 @@
 				
 				background: url("border.png") center no-repeat;
 				opacity:0;
-				transition: opacity 2s ease-in-out;
-				-webkit-transition: opacity 2s ease-in-out;
+				transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
 			}
 			
 			div.backimg:hover{
 				opacity:1;
+			}
+			a:link 
+			{
+				text-decoration:none;
 			}
 			
 		</style>
 	
 	</head>
 	<body>
-		<div class="enter" href="page.html">
-				
-				<div class="text"  > 
-					Enter
-				</div>
+		<div class="enter">
+				<a href="page.html">
+					<div class="text"  > 
+						Enter
+					</div>
 
 				
-				<div class="backimg">
-				</div>
-
-			
-		</div>
+					<div class="backimg">
+					</div>
+				<a>
 	</body>
 </html>
